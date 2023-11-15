@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ ! -d "bin" ]; then
+    mkdir -p bin
+else
+    :
+fi
+
+gcc -o ase ase.c
+mv ase bin/
+echo "Compiled. Binary in bin/"
+
